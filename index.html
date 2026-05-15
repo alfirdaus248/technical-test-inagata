@@ -15,11 +15,6 @@
 </head>
 
 <body>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- JS -->
-    <script src="script.js"></script>
 
     <div class="main-layout">
 
@@ -58,13 +53,10 @@
                     Investments
                 </button>
 
-                <!-- ACTIVE -->
-                <button class="menu-item active" onclick="showPage('credit')">
-
+                <button class="menu-item active" onclick="showPage('credit', this)" data-page="credit"
+                    data-icon="assets/icons/credit-card.svg" data-active-icon="assets/icons/credit-card-active.svg">
                     <img src="assets/icons/credit-card-active.svg" alt="">
-
                     Credit Cards
-
                 </button>
 
                 <button class="menu-item">
@@ -72,13 +64,10 @@
                     Loans
                 </button>
 
-                <!-- NON ACTIVE -->
-                <button class="menu-item" onclick="showPage('services')">
-
+                <button class="menu-item" onclick="showPage('services', this)" data-page="services"
+                    data-icon="assets/icons/service.svg" data-active-icon="assets/icons/service-active.svg">
                     <img src="assets/icons/service.svg" alt="">
-
                     Services
-
                 </button>
 
                 <button class="menu-item">
@@ -86,13 +75,10 @@
                     My Privileges
                 </button>
 
-                <!-- NON ACTIVE -->
-                <button class="menu-item" onclick="showPage('setting')">
-
+                <button class="menu-item" onclick="showPage('setting', this)" data-page="setting"
+                    data-icon="assets/icons/setting.svg" data-active-icon="assets/icons/setting-active.svg">
                     <img src="assets/icons/setting.svg" alt="">
-
                     Setting
-
                 </button>
 
             </nav>
@@ -102,350 +88,110 @@
         <!-- MAIN CONTENT -->
         <main class="content">
 
-            <!-- CREDIT PAGE -->
-            <section id="credit-page">
+            <!-- TOPBAR -->
+            <div class="topbar">
 
-                <!-- TOPBAR -->
-                <div class="topbar">
+                <button class="hamburger-btn" type="button" onclick="toggleMobileMenu()">
+                    ☰
+                </button>
 
-                    <h1>Credit Cards</h1>
+                <h1 id="page-title">Credit Cards</h1>
 
-                    <div class="topbar-right">
+                <div class="topbar-right">
+
+                    <!-- SEARCH -->
+                    <div class="search-box">
+
+                        <img src="assets/icons/search.svg" alt="">
 
                         <input type="text" placeholder="Search for something">
 
-                        <div class="profile-circle"></div>
+                    </div>
+
+                    <!-- SETTINGS -->
+                    <div class="top-icon">
+
+                        <img src="assets/icons/setting-topbar.svg" alt="">
 
                     </div>
+
+                    <!-- NOTIFICATION -->
+                    <div class="top-icon">
+
+                        <img src="assets/icons/notification.svg" alt="">
+
+                    </div>
+
+                    <!-- PROFILE -->
+                    <img src="assets/images/profile.png" alt="" class="profile-img">
 
                 </div>
-
-                <!-- MY CARDS -->
-                <div class="section-header">
-                    <h3>My Cards</h3>
-                </div>
-
-                <div class="cards-row">
-
-                    <!-- CARD 1 -->
-                    <div class="bank-card blue-card">
-
-                        <div class="card-top">
-                            <div>
-                                <p>Balance</p>
-                                <h2>$5,756</h2>
-                            </div>
-
-                            <div class="chip"></div>
-                        </div>
-
-                        <div class="card-middle">
-
-                            <div>
-                                <p>CARD HOLDER</p>
-                                <h4>Eddy Cusuma</h4>
-                            </div>
-
-                            <div>
-                                <p>VALID THRU</p>
-                                <h4>12/22</h4>
-                            </div>
-
-                        </div>
-
-                        <div class="card-bottom">
-                            <h3>3778 **** **** 1234</h3>
-
-                            <div class="master"></div>
-                        </div>
-
-                    </div>
-
-                    <!-- CARD 2 -->
-                    <div class="bank-card purple-card">
-
-                        <div class="card-top">
-                            <div>
-                                <p>Balance</p>
-                                <h2>$5,756</h2>
-                            </div>
-
-                            <div class="chip"></div>
-                        </div>
-
-                        <div class="card-middle">
-
-                            <div>
-                                <p>CARD HOLDER</p>
-                                <h4>Eddy Cusuma</h4>
-                            </div>
-
-                            <div>
-                                <p>VALID THRU</p>
-                                <h4>12/22</h4>
-                            </div>
-
-                        </div>
-
-                        <div class="card-bottom">
-                            <h3>3778 **** **** 1234</h3>
-
-                            <div class="master"></div>
-                        </div>
-
-                    </div>
-
-                    <!-- CARD 3 -->
-                    <div class="bank-card white-card">
-
-                        <div class="card-top">
-                            <div>
-                                <p>Balance</p>
-                                <h2>$5,756</h2>
-                            </div>
-
-                            <div class="chip"></div>
-                        </div>
-
-                        <div class="card-middle">
-
-                            <div>
-                                <p>CARD HOLDER</p>
-                                <h4>Eddy Cusuma</h4>
-                            </div>
-
-                            <div>
-                                <p>VALID THRU</p>
-                                <h4>12/22</h4>
-                            </div>
-
-                        </div>
-
-                        <div class="card-bottom">
-                            <h3>3778 **** **** 1234</h3>
-
-                            <div class="master"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- STATISTICS SECTION -->
-                <div class="stats-layout">
-
-                    <!-- LEFT -->
-                    <div class="stats-card">
-
-                        <div class="section-header">
-                            <h3>Card Expense Statistics</h3>
-                        </div>
-
-                        <div class="chart-placeholder">
-
-                            <div class="chart-circle">
-
-                                <div class="chart-center">
-                                    30%
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- RIGHT -->
-                    <div class="card-list-box">
-
-                        <div class="section-header">
-                            <h3>Card List</h3>
-                        </div>
-
-                        <!-- ITEM -->
-                        <div class="list-item">
-
-                            <div class="list-left">
-
-                                <div class="list-icon"></div>
-
-                                <div>
-                                    <h4>DBL Bank</h4>
-                                    <p>Bank Account</p>
-                                </div>
-
-                            </div>
-
-                            <h4>$2,560</h4>
-
-                        </div>
-
-                        <!-- ITEM -->
-                        <div class="list-item">
-
-                            <div class="list-left">
-
-                                <div class="list-icon purple"></div>
-
-                                <div>
-                                    <h4>BRC Bank</h4>
-                                    <p>Bank Account</p>
-                                </div>
-
-                            </div>
-
-                            <h4>$5,420</h4>
-
-                        </div>
-
-                        <!-- ITEM -->
-                        <div class="list-item">
-
-                            <div class="list-left">
-
-                                <div class="list-icon orange"></div>
-
-                                <div>
-                                    <h4>ABM Bank</h4>
-                                    <p>Bank Account</p>
-                                </div>
-
-                            </div>
-
-                            <h4>$1,250</h4>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- BOTTOM SECTION -->
-                <div class="bottom-layout">
-
-                    <!-- ADD CARD -->
-                    <div class="add-card-box">
-
-                        <div class="section-header">
-                            <h3>Add New Card</h3>
-                        </div>
-
-                        <p class="add-desc">
-                            Credit Card generally means a plastic card issued by Scheduled Commercial Banks assigned to
-                            a Cardholder.
-                        </p>
-
-                        <form class="card-form">
-
-                            <div class="form-group">
-                                <label>Card Type</label>
-                                <input type="text" placeholder="Classic">
-                            </div>
-
-                            <div class="form-group">
-                                <label>Name On Card</label>
-                                <input type="text" placeholder="My Cards">
-                            </div>
-
-                            <div class="form-group">
-                                <label>Card Number</label>
-                                <input type="text" placeholder="**** **** ****">
-                            </div>
-
-                            <div class="form-group">
-                                <label>Expiration Date</label>
-                                <input type="text" placeholder="25 January 2025">
-                            </div>
-
-                            <button type="submit" class="add-btn">
-                                Add Card
-                            </button>
-
-                        </form>
-
-                    </div>
-
-                    <!-- CARD SETTINGS -->
-                    <div class="setting-box">
-
-                        <div class="section-header">
-                            <h3>Card Setting</h3>
-                        </div>
-
-                        <div class="setting-item">
-
-                            <div class="setting-icon blue"></div>
-
-                            <div>
-                                <h4>Block Card</h4>
-                                <p>Instantly block your card</p>
-                            </div>
-
-                        </div>
-
-                        <div class="setting-item">
-
-                            <div class="setting-icon green"></div>
-
-                            <div>
-                                <h4>Change Pin Code</h4>
-                                <p>Choose another pin code</p>
-                            </div>
-
-                        </div>
-
-                        <div class="setting-item">
-
-                            <div class="setting-icon orange"></div>
-
-                            <div>
-                                <h4>Add to Google Pay</h4>
-                                <p>Withdraw without any card</p>
-                            </div>
-
-                        </div>
-
-                        <div class="setting-item">
-
-                            <div class="setting-icon pink"></div>
-
-                            <div>
-                                <h4>Add to Apple Pay</h4>
-                                <p>Withdraw without any card</p>
-                            </div>
-
-                        </div>
-
-                        <div class="setting-item">
-
-                            <div class="setting-icon purple"></div>
-
-                            <div>
-                                <h4>Add to Apple Store</h4>
-                                <p>Withdraw without any card</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!-- SERVICES PAGE -->
-            <section id="services-page" class="hidden">
-                <h1>Services</h1>
-            </section>
-
-            <!-- SETTING PAGE -->
-            <section id="setting-page" class="hidden">
-                <h1>Setting</h1>
-            </section>
+            </div>
+
+            <nav class="mobile-menu" id="mobileMenu">
+
+                <button class="menu-item">
+                    <img src="assets/icons/dashboard.svg" alt="">
+                    Dashboard
+                </button>
+
+                <button class="menu-item">
+                    <img src="assets/icons/transaction.svg" alt="">
+                    Transactions
+                </button>
+
+                <button class="menu-item">
+                    <img src="assets/icons/account.svg" alt="">
+                    Accounts
+                </button>
+
+                <button class="menu-item">
+                    <img src="assets/icons/investment.svg" alt="">
+                    Investments
+                </button>
+
+                <button class="menu-item active" onclick="showPage('credit', this)" data-page="credit"
+                    data-icon="assets/icons/credit-card.svg" data-active-icon="assets/icons/credit-card-active.svg">
+                    <img src="assets/icons/credit-card-active.svg" alt="">
+                    Credit Cards
+                </button>
+
+                <button class="menu-item">
+                    <img src="assets/icons/loan.svg" alt="">
+                    Loans
+                </button>
+
+                <button class="menu-item" onclick="showPage('services', this)" data-page="services"
+                    data-icon="assets/icons/service.svg" data-active-icon="assets/icons/service-active.svg">
+                    <img src="assets/icons/service.svg" alt="">
+                    Services
+                </button>
+
+                <button class="menu-item">
+                    <img src="assets/icons/my-privilege.svg" alt="">
+                    My Privileges
+                </button>
+
+                <button class="menu-item" onclick="showPage('setting', this)" data-page="setting"
+                    data-icon="assets/icons/setting.svg" data-active-icon="assets/icons/setting-active.svg">
+                    <img src="assets/icons/setting.svg" alt="">
+                    Setting
+                </button>
+
+            </nav>
+
+            <div id="page-container"></div>
 
         </main>
 
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>
