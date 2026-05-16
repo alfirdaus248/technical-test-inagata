@@ -1,0 +1,173 @@
+.add-btn {
+  width: 180px;
+
+  border: none;
+
+  background: #1814F3;
+
+  color: white;
+
+  padding: 13px;
+
+  border-radius: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+.save-btn {
+  width: 190px;
+
+  border: none;
+  border-radius: 15px;
+
+  background: #1814F3;
+  color: white;
+
+  padding: 14px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  opacity: 0.9;
+}
+
+.view-link {
+  color: #1814F3;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  width: 100%;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  border: 1px solid #DFEAF2;
+  border-radius: 15px;
+
+  padding: 13px 44px 13px 18px;
+
+  color: #718EBF;
+  font-size: 14px;
+
+  outline: none;
+  background: white;
+
+  cursor: pointer;
+}
+
+.select-wrapper::after {
+  content: "";
+
+  position: absolute;
+  right: 18px;
+  top: 50%;
+
+  width: 10px;
+  height: 10px;
+
+  border-right: 2px solid #718EBF;
+  border-bottom: 2px solid #718EBF;
+
+  transform: translateY(-65%) rotate(45deg);
+
+  pointer-events: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+
+  background: #DFEAF2;
+  border-radius: 50px;
+
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  left: 3px;
+  top: 3px;
+
+  background: white;
+  border-radius: 50%;
+
+  transition: 0.3s;
+}
+
+.switch input:checked+.slider {
+  background: #16DBCC;
+}
+
+.switch input:checked+.slider::before {
+  transform: translateX(22px);
+}
+
+.view-link,
+.add-btn,
+.menu-item,
+.top-icon,
+.profile-img,
+.hamburger-btn {
+  cursor: pointer;
+}
+
+.add-btn,
+.save-btn,
+.service-detail-btn,
+.view-link,
+.menu-item{
+  transition:0.3s ease;
+}
+
+.add-btn:hover,
+.save-btn:hover{
+  opacity:0.9;
+  transform:translateY(-2px);
+}
+
+.service-detail-btn:hover{
+  color:#1814F3;
+  border-color:#1814F3;
+}
+
+.view-link:hover{
+  opacity:0.75;
+}

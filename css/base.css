@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #F5F7FA;
+}
+
+.hidden {
+  display: none;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.content,
+.page-content,
+.stats-column,
+.bottom-column,
+.card-col {
+  min-width: 0;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgba(45, 96, 255, 0.25);
+  outline-offset: 2px;
+}
+
+html{
+  scroll-behavior:smooth;
+}

@@ -1,0 +1,249 @@
+.setting-panel {
+  background: white;
+  border-radius: 25px;
+  padding: 30px;
+}
+
+.setting-tabs {
+  display: flex;
+  gap: 60px;
+
+  border-bottom: 1px solid #F4F5F7;
+  margin-bottom: 40px;
+}
+
+.setting-tab {
+  position: relative;
+
+  border: none;
+  background: none;
+
+  padding: 0 12px 12px;
+
+  color: #718EBF;
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.setting-tab.active {
+  color: #1814F3;
+}
+
+.setting-tab.active::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  width: 100%;
+  height: 3px;
+
+  background: #1814F3;
+  border-radius: 10px 10px 0 0;
+}
+
+.setting-empty-text {
+  color: #718EBF;
+}
+
+/* Edit Profile Tab */
+
+.profile-form-layout {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 40px;
+}
+
+.profile-photo-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-photo-wrapper {
+  position: relative;
+  width: 132px;
+  height: 132px;
+}
+
+.profile-photo {
+  width: 132px;
+  height: 132px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.edit-photo-btn {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #1814F3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.edit-photo-btn img {
+  width: 14px;
+  height: 14px;
+}
+
+.setting-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 30px;
+}
+
+.setting-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-form-group label {
+  margin-bottom: 9px;
+
+  color: #232323;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.setting-form-group input {
+  width: 100%;
+
+  border: 1px solid #DFEAF2;
+  border-radius: 15px;
+
+  padding: 13px 18px;
+
+  color: #718EBF;
+  font-size: 14px;
+
+  outline: none;
+}
+
+.setting-form-group input:focus {
+  border-color: #1814F3;
+}
+
+.setting-form-actions {
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Preferences Tab */
+
+.preferences-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.preferences-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 24px;
+}
+
+.notification-section h4 {
+  margin-bottom: 16px;
+  color: #343C6A;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.notification-item p {
+  margin: 0;
+  color: #232323;
+  font-size: 14px;
+}
+
+/* Security Tab */
+
+.security-form {
+  min-height: 300px;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto 1fr;
+  column-gap: 40px;
+}
+
+.two-factor-section {
+  grid-column: 1 / -1;
+  margin-bottom: 22px;
+}
+
+.two-factor-section h4,
+.change-password-section h4 {
+  color: #343C6A;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.change-password-section {
+  width: 460px;
+}
+
+.security-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.security-input-group label {
+  margin-bottom: 8px;
+  color: #232323;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.security-input-group input {
+  width: 100%;
+
+  border: 1px solid #DFEAF2;
+  border-radius: 15px;
+
+  padding: 13px 18px;
+
+  color: #718EBF;
+  font-size: 14px;
+
+  outline: none;
+}
+
+.security-input-group input:focus {
+  border-color: #1814F3;
+}
+
+.security-actions {
+  grid-column: 2;
+  grid-row: 3;
+
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+}

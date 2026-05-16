@@ -1,9 +1,218 @@
-<div class="page-content">
-    <div class="section-header">
-        <h3>Setting</h3>
+<div class="page-content setting-page">
+
+    <div class="setting-panel">
+
+        <!-- SETTING TABS -->
+        <div class="setting-tabs">
+            <button class="setting-tab active" onclick="showSettingTab('edit-profile', this)">
+                Edit Profile
+            </button>
+
+            <button class="setting-tab" onclick="showSettingTab('preferences', this)">
+                Preferences
+            </button>
+
+            <button class="setting-tab" onclick="showSettingTab('security', this)">
+                Security
+            </button>
+        </div>
+
+        <!-- EDIT PROFILE TAB -->
+        <div class="setting-tab-content" id="edit-profile-tab">
+
+            <div class="profile-form-layout">
+
+                <!-- PROFILE IMAGE -->
+                <div class="profile-photo-box">
+                    <div class="profile-photo-wrapper">
+                        <img src="assets/images/profile.svg" alt="Profile photo" class="profile-photo">
+
+                        <button class="edit-photo-btn" type="button">
+                            <img src="assets/icons/edit.svg" alt="Edit profile photo">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- FORM -->
+                <form class="setting-form">
+
+                    <div class="setting-form-group">
+                        <label>Your Name</label>
+                        <input type="text" value="Charlene Reed">
+                    </div>
+
+                    <div class="setting-form-group">
+                        <label>User Name</label>
+                        <input type="text" value="Charlene Reed">
+                    </div>
+
+                    <div class="setting-form-group">
+                        <label>Email</label>
+                        <input type="email" value="charlenereed@gmail.com">
+                    </div>
+
+                    <div class="setting-form-group">
+                        <label>Password</label>
+                        <input type="password" value="123456789">
+                    </div>
+
+                    <div class="setting-form-group">
+                        <label>Date of Birth</label>
+
+                        <div class="select-wrapper">
+                            <select>
+                                <option>25 January 1990</option>
+                                <option>26 January 1990</option>
+                                <option>27 January 1990</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="setting-form-group">
+                        <label>Present Address</label>
+                        <input type="text" value="San Jose, California, USA">
+                    </div>
+
+                    <div class="setting-form-group">
+                        <label>Permanent Address</label>
+                        <input type="text" value="San Jose, California, USA">
+                    </div>
+
+                    <div class="setting-form-group">
+                        <label>City</label>
+                        <input type="text" value="San Jose">
+                    </div>
+
+                    <div class="setting-form-group">
+                        <label>Postal Code</label>
+                        <input type="text" value="45962">
+                    </div>
+
+                    <div class="setting-form-group">
+                        <label>Country</label>
+                        <input type="text" value="USA">
+                    </div>
+
+                    <div class="setting-form-actions">
+                        <button class="save-btn" type="button">
+                            Save
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- PREFERENCES TAB -->
+        <div class="setting-tab-content hidden" id="preferences-tab">
+
+            <form class="preferences-form">
+
+                <div class="preferences-grid">
+
+                    <div class="setting-form-group">
+                        <label>Currency</label>
+                        <input type="text" value="USD">
+                    </div>
+
+                    <div class="setting-form-group">
+                        <label>Time Zone</label>
+                        <input type="text" value="(GMT-12:00) International Date Line West">
+                    </div>
+
+                </div>
+
+                <div class="notification-section">
+
+                    <h4>Notification</h4>
+
+                    <div class="notification-item">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+
+                        <p>I send or receive digita currency</p>
+                    </div>
+
+                    <div class="notification-item">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+
+                        <p>I receive merchant order</p>
+                    </div>
+
+                    <div class="notification-item">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+
+                        <p>There are recommendation for my account</p>
+                    </div>
+
+                </div>
+
+                <div class="setting-form-actions">
+                    <button class="save-btn" type="button">
+                        Save
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- SECURITY TAB -->
+        <div class="setting-tab-content hidden" id="security-tab">
+
+            <form class="security-form">
+
+                <div class="two-factor-section">
+
+                    <h4>Two-factor Authentication</h4>
+
+                    <div class="notification-item">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+
+                        <p>Enable or disable two factor authentication</p>
+                    </div>
+
+                </div>
+
+                <div class="change-password-section">
+
+                    <h4>Change Password</h4>
+
+                    <div class="security-input-group">
+                        <label>Current Password</label>
+                        <input type="password" value="123456789">
+                    </div>
+
+                    <div class="security-input-group">
+                        <label>New Password</label>
+                        <input type="password" value="123456789">
+                    </div>
+
+                </div>
+
+                <div class="security-actions">
+                    <button class="save-btn" type="button">
+                        Save
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
     </div>
 
-    <div class="add-card-box">
-        <p>Setting page content here.</p>
-    </div>
 </div>

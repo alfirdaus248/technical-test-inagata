@@ -18,6 +18,11 @@ async function loadPage(page){
     const html = await response.text();
 
     container.innerHTML = html;
+
+    container.classList.remove('page-fade');
+    void container.offsetWidth;
+    container.classList.add('page-fade');
+
     title.textContent = pageTitles[page] || 'BankDash';
 
   }catch(error){
@@ -76,3 +81,19 @@ function toggleMobileMenu(){
 document.addEventListener('DOMContentLoaded', () => {
   loadPage('credit');
 });
+
+function showSettingTab(tab, element){
+  const contents = document.querySelectorAll('.setting-tab-content');
+  const tabs = document.querySelectorAll('.setting-tab');
+
+  contents.forEach(content => {
+    content.classList.add('hidden');
+  });
+
+  tabs.forEach(tabButton => {
+    tabButton.classList.remove('active');
+  });
+
+  document.getElementById(`${tab}-tab`).classList.remove('hidden');
+  element.classList.add('active');
+}

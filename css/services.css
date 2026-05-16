@@ -1,0 +1,138 @@
+/* Top service cards */
+
+.service-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 24px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 25px;
+  padding: 24px 36px;
+
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.service-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.service-icon.blue {
+  background: #E7EDFF;
+}
+
+.service-icon.yellow {
+  background: #FFF5D9;
+}
+
+.service-icon.green {
+  background: #DCFAF8;
+}
+
+.service-icon.pink {
+  background: #FFE0EB;
+}
+
+.service-card h4,
+.service-main h4,
+.service-col h4 {
+  margin: 0 0 6px;
+  color: #232323;
+  font-size: 16px;
+}
+
+.service-card h4 {
+  font-weight: 600;
+}
+
+.service-main h4,
+.service-col h4 {
+  font-weight: 500;
+}
+
+.service-card p,
+.service-main p,
+.service-col p {
+  margin: 0;
+  color: #718EBF;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Bank Services List */
+
+.bank-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.bank-service-item {
+  background: white;
+  border-radius: 20px;
+  padding: 18px 28px;
+
+  display: grid;
+  grid-template-columns: 60px 1.3fr 1fr 1fr 1fr auto;
+  align-items: center;
+  gap: 20px;
+
+  transition: 0.3s;
+}
+
+.bank-service-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.service-main,
+.service-col {
+  min-width: 0;
+}
+
+.service-detail-btn {
+  min-width: 130px;
+  padding: 8px 22px;
+
+  border: 1px solid #718EBF;
+  border-radius: 50px;
+
+  color: #718EBF;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.service-detail-btn:hover,
+.service-detail-btn.active {
+  color: #1814F3;
+  border-color: #1814F3;
+}

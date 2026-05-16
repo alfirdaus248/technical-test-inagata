@@ -1,0 +1,351 @@
+@media(max-width:1024px) {
+
+  .sidebar {
+    width: 190px;
+    padding: 20px 12px;
+  }
+
+  .logo {
+    margin-bottom: 34px;
+  }
+
+  .logo h2 {
+    font-size: 21px;
+  }
+
+  .logo-icon {
+    width: 30px;
+  }
+
+  .menu {
+    gap: 4px;
+  }
+
+  .menu-item {
+    font-size: 13px;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .menu-item img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .topbar {
+    padding: 16px 20px;
+  }
+
+  .topbar h1 {
+    font-size: 25px;
+  }
+
+  .topbar-right {
+    gap: 10px;
+  }
+
+  .search-box {
+    width: 190px;
+    height: 42px;
+    padding: 0 14px;
+  }
+
+  .search-box input {
+    width: 130px;
+    font-size: 13px;
+  }
+
+  .top-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .profile-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .page-content {
+    padding: 18px;
+  }
+
+  .section-header h3 {
+    font-size: 19px;
+  }
+
+  .cards-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+
+  .bank-card {
+    min-width: 0;
+    min-height: 180px;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .card-top h2 {
+    font-size: 21px;
+  }
+
+  .card-top p {
+    font-size: 11px;
+  }
+
+  .card-middle {
+    gap: 18px;
+  }
+
+  .card-middle h4 {
+    font-size: 13px;
+  }
+
+  .card-middle p {
+    font-size: 10px;
+  }
+
+  .card-footer {
+    margin: 0 -16px -16px -16px;
+    padding: 13px 16px;
+  }
+
+  .card-bottom h3 {
+    font-size: 14px;
+  }
+
+  .chip-icon {
+    width: 34px;
+  }
+
+  .eclipse-icon {
+    width: 38px;
+  }
+
+  .stats-layout {
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+
+  .stats-card {
+    padding: 18px;
+  }
+
+  .expense-chart-img {
+    width: 165px;
+  }
+
+  .chart-legend {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px 14px;
+  }
+
+  .legend-item {
+    font-size: 13px;
+  }
+
+  .dot {
+    width: 11px;
+    height: 11px;
+  }
+
+  .card-list-box {
+    gap: 12px;
+  }
+
+  .card-list-item {
+    grid-template-columns: 48px repeat(4, minmax(0, 1fr)) auto;
+    gap: 9px;
+    padding: 14px 16px;
+    border-radius: 20px;
+  }
+
+  .card-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+  }
+
+  .card-icon img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .card-col h4 {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .card-col p {
+    font-size: 12px;
+  }
+
+  .card-col h4,
+  .card-col p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .view-link {
+    font-size: 12px;
+  }
+
+  .bottom-layout {
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 14px;
+  }
+
+  .add-card-box,
+  .setting-box {
+    padding: 20px;
+  }
+
+  .add-desc {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .card-form {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 14px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input {
+    padding: 11px 14px;
+    font-size: 13px;
+  }
+
+  .add-btn {
+    padding: 12px;
+    width: 150px;
+  }
+
+  .setting-item {
+    padding: 6px 0;
+  }
+
+  .setting-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+  }
+
+  .setting-icon img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .setting-item h4 {
+    font-size: 14px;
+  }
+
+  .setting-item p {
+    font-size: 12px;
+  }
+
+  .service-cards-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .service-card {
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+  }
+
+  .service-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .service-card h4,
+  .service-main h4,
+  .service-col h4 {
+    font-size: 13px;
+  }
+
+  .service-card p,
+  .service-main p,
+  .service-col p {
+    font-size: 12px;
+  }
+
+  .bank-service-item {
+    grid-template-columns: 52px 1.2fr repeat(3, minmax(0, 1fr)) auto;
+    gap: 12px;
+    padding: 14px 18px;
+  }
+
+  .service-detail-btn {
+    min-width: 100px;
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+
+  .setting-panel {
+    padding: 24px;
+  }
+
+  .setting-tabs {
+    gap: 45px;
+    margin-bottom: 30px;
+  }
+
+  .profile-form-layout {
+    grid-template-columns: 120px 1fr;
+    gap: 28px;
+  }
+
+  .profile-photo-wrapper,
+  .profile-photo {
+    width: 113px;
+    height: 110px;
+  }
+
+  .setting-form {
+    gap: 18px 22px;
+  }
+
+  .setting-form-group input {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+
+  .save-btn {
+    width: 160px;
+  }
+
+  .preferences-grid {
+    gap: 22px;
+  }
+
+  .notification-item p {
+    font-size: 13px;
+  }
+
+  .security-form {
+    min-height: 260px;
+  }
+
+  .change-password-section {
+    width: 420px;
+  }
+
+  .security-input-group input {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+}
