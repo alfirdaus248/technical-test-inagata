@@ -4,7 +4,7 @@ BankDash Dashboard adalah project slicing UI dashboard perbankan berdasarkan des
 
 ## Live Demo
 
-Link demo akan ditambahkan setelah proses deployment selesai.
+https://alfirdaus248.github.io/technical-test-inagata/
 
 ## Repository
 
