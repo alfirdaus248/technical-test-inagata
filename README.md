@@ -1,6 +1,6 @@
 # BankDash Dashboard
 
-BankDash Dashboard adalah project slicing UI dashboard perbankan berdasarkan desain Figma untuk kebutuhan technical test Frontend Developer.
+BankDash Dashboard adalah project slicing UI dashboard perbankan berdasarkan desain Figma untuk kebutuhan technical test untuk program Hub Academy Inagata internship sebagai Frontend Developer.
 
 ## Live Demo
 
