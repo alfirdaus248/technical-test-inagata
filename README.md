@@ -59,6 +59,8 @@ project/
     ├── icons/
     └── images/
 
+```
+
 ## How to Run Locally
 
 Karena project ini menggunakan `fetch()` untuk load halaman dari folder `pages`, jalankan menggunakan local server.
